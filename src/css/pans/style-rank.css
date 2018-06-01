@@ -1,0 +1,38 @@
+.bandeau{
+height: 14em;
+width: 100%;
+background-color: #353b48;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.img{
+    border-radius: 50%;
+    height: 9em;
+    margin-top: 2.5em; 
+    margin-left: 2em;
+    border-color: white;
+    border: 1em;
+}
+
+.info{
+  margin-left: 13em;
+  margin-top: 3em;
+  position: absolute;
+  font-family:;
+  color: white;
+}
+.address-card{
+font-family: Open ;
+
+}
+
+.rank{
+    margin-left: 2em;
+    margin-top: 10em;
+    color: white;
+    font-family: sans-serif;
+}

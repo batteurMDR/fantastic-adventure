@@ -2,6 +2,9 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
     box-sizing: border-box; 
+    -webkit-overflow-scrolling: touch; 
+}*:focus {
+    outline: none;
 }body,html{
 	width: 100%;
 	height: 100%;
@@ -10,6 +13,14 @@
 	margin: 0;
 	border: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}a{
+	color: inherit;
+	text-decoration: none;
+    color: #000c4c;
+}img{
+	max-width: 100%;
+	height: auto;
 }
 
 header.header{
@@ -21,9 +32,17 @@ header.header{
 	height: 70px;
 	line-height: 70px;
 	text-align: center;
+	border-bottom: 1px solid #070F52;
 }header.header a.menu{
 	position: absolute;
 	left: 15px;
+	top: 0;
+	bottom: 0;
+}header.header img.header-logo{
+	height: 69px;
+}header.header a.alink{
+	position: absolute;
+	right: 15px;
 	top: 0;
 	bottom: 0;
 }
@@ -36,6 +55,7 @@ section.container{
 	right: 0;
 	bottom: 50px;
 	overflow-y: scroll;
+     overflow-x: hidden;
 }
 
 footer.footer{
@@ -47,6 +67,7 @@ footer.footer{
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
+	border-top: 1px solid #070F52;
 }footer.footer ul.footer-list{
 	display: flex;
 	flex-wrap: nowrap;
@@ -57,18 +78,38 @@ footer.footer{
 }footer.footer ul.footer-list li.footer-list-item{
 	display: inline-block;
 	vertical-align: top;
+}footer.footer ul.footer-list li.footer-list-item a.game{
+	font-size: 1.6em;
 }
 
 nav.nav{
 	display: block;
 	position: absolute;
 	width: 80%;
-	background-color: rgba(0,0,0,.7);
+	background-color: rgba(0,12,76,.9);
 	height: 100%;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	transition-duration: .5s;
+	text-align: center;
 }nav.nav.hidden{
 	left: -80%;
+}nav.nav ul.nav-list{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 70%;
+}nav.nav ul.nav-list li.nav-list-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}nav.nav ul.nav-list li.nav-list-item a.mlink{
+	color: #fff;
 }

@@ -1,7 +1,14 @@
 var app = {
 
+	icons : {
+		amis : '<i class="fas fa-plus"></i>',
+		carte : '<i class="fas fa-filter"></i>',
+		classement : '<i class="fas fa-filter"></i>'
+	},
+
 	init : function($body,current){
 		this.$body = $body;
+		this.$header = $body.find('header.header');
 		this.$links = $body.find('a.link');
 		this.$mlinks = $body.find('a.mlink');
 		this.$menuLink = $body.find('a.menu');
@@ -54,8 +61,12 @@ var app = {
 
 		load : function(pan){
 			$('head').find('link.'+app.current).remove();
+			$('a.alink').remove();
 			app.$container.load("pans/"+pan+".html");
 			$('head').append($('<link rel="stylesheet" type="text/css" />').attr("href","css/pans/"+pan+".css").attr('class',pan));
+			if(typeof(app.icons[pan])=="string"){
+				$('<a/>',{class:'alink',href:'#'}).append(app.icons[pan]).appendTo(app.$header);
+			}
 			app.current = pan;
 		}
 
@@ -64,5 +75,5 @@ var app = {
 }
 
 $(function(){
-	app.init($('body'),"friends");
+	app.init($('body'),"amis");
 });
