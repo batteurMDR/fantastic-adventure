@@ -1,0 +1,26 @@
+div.propos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
+}
+
+.type {
+    display: block;
+    width: 25%;
+    line-height: 125%;
+    text-align: center;
+    background: #000c4c;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.name {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+
+}
