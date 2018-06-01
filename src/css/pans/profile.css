@@ -1,0 +1,9 @@
+div.profile{
+	text-align: center;
+}
+
+div.profile img.profile-avatar{
+	width: 50%;
+  	border-radius: 50% !important;
+  	margin: 25px 0;
+}
