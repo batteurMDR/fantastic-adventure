@@ -2,7 +2,6 @@ var app = {
 
 	icons : {
 		amis : '<i class="fas fa-plus"></i>',
-		carte : '<i class="fas fa-filter"></i>',
 		classement : '<i class="fas fa-filter"></i>'
 	},
 
