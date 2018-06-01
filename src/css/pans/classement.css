@@ -120,9 +120,13 @@ ul, ul a {
   border-radius: 0.2rem;
 }
 .click {
-	left: 85%;
+	right: 2%;
 	position: absolute;
 }
 .star {
   color: #F5D76E;
+}
+.right {
+  position: absolute;
+  right: 2%;
 }
