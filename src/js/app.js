@@ -82,7 +82,22 @@ var app = {
 				var pan = that.attr('href');
 				that.on('click',function(e){
 					e.preventDefault();
+				})
+			});
+			app.$container.find('a.link').each(function(){
+				var that = $(this);
+				var pan = that.attr('href');
+				that.on('click',function(e){
+					e.preventDefault();
 					app.pan.load(pan);
+				})
+			});
+			app.$container.find('a.invite').each(function(){
+				var that = $(this);
+				var pan = that.attr('href');
+				that.on('click',function(e){
+					e.preventDefault();
+					alert('Invitation envoyée');
 				})
 			});
 		}
