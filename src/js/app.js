@@ -60,13 +60,18 @@ var app = {
 	pan : {
 
 		load : function(pan){
+			app.$container.hide();
 			$('head').find('link.'+app.current).remove();
 			$('a.alink').remove();
 			app.$container.load("pans/"+pan+".html");
 			$('head').append($('<link rel="stylesheet" type="text/css" />').attr("href","css/pans/"+pan+".css").attr('class',pan));
 			if(typeof(app.icons[pan])=="string"){
-				$('<a/>',{class:'alink',href:'#'}).append(app.icons[pan]).appendTo(app.$header);
+				$('<a/>',{class:'alink',href:'#'}).append(app.icons[pan]).appendTo(app.$header).on('click',function(e){
+					e.preventDefault();
+					$('#modal').toggleClass('hidden');
+				});
 			}
+			app.$container.show();
 			app.current = pan;
 		}
 

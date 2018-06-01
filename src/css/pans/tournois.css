@@ -1,4 +1,4 @@
-div.connect{
+div.tournois{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,13 +17,4 @@ a.btn {
     margin: 0 auto;
 }a.btn:hover {
     color: red;
-}
-
-p.or{
-    font-weight: bold;
-    font-size: 1.6em;
-}
-
-a.red{
-    color: #da373a;
 }
