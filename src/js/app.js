@@ -64,5 +64,5 @@ var app = {
 }
 
 $(function(){
-	app.init($('body'),"friends");
+	app.init($('body'),"amis");
 });
