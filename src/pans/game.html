@@ -1,11 +1,27 @@
 <div class="connect">
-    <a id="rouge" class="link btn">0</a>
+    <a id="rouge" class="btn">0</a>
 
-    <a id="bleu" class="link btn">0</a>
+    <a id="bleu" class="btn">0</a>
 </div>
+<div class="connect">
+    <a id="minrouge" class="btn">-</a>
+
+    <a id="minbleu" class="btn">-</a>
+</div>
+
+<a href="amis" class="btn link">Envoyer</a>
 
 <script>
 $("#rouge").click(function(){
-    $("#rouge").text()+1;
+    $("#rouge").text(parseInt($("#rouge").text())+1);
+});
+$("#bleu").click(function(){
+    $("#bleu").text(parseInt($("#bleu").text())+1);
+});
+$("#minrouge").click(function(){
+    $("#rouge").text(parseInt($("#rouge").text())-1);
+});
+$("#minbleu").click(function(){
+    $("#bleu").text(parseInt($("#bleu").text())-1);
 });
 </script>
