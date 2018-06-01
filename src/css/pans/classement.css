@@ -134,9 +134,17 @@ ul, ul a {
 .hidden {
   display: none;
 }
+.space {
+  padding: 1em;
+  border-bottom: 1px solid transparent;
+  border-color: #000c4c;
+  transition-delay: 1s;
+  
+}
 input[type=checkbox] { display:none; } /* to hide the checkbox itself */
 input[type=checkbox] + label:before {
   font-family: FontAwesome;
+  font-size: 20px;
   display: inline-block;
 }
 
@@ -144,4 +152,4 @@ input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
 input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
 
 input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
-input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+input[type=checkbox]:checked + label:before { letter-spacing: 6px; } /* allow space for check mark */
