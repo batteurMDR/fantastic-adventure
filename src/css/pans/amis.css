@@ -42,10 +42,6 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-body {
-	font-family: 'Open Sans', sans-serif;
-	margin: 0;
-}
 .profile {
 	border-bottom: 0.1em solid transparent;
 	border-color: #e5e5e5;
