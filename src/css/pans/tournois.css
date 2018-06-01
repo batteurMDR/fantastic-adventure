@@ -1,15 +1,29 @@
-body {
-    font-family: sans-serif;
+div.connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
 }
-.bouton1 {
-    padding: 10px 30px; 
-    background: #222266; 
-    color: white; 
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
+a.btn {
+    display: block;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    background: #000c4c;
+    color: #fff;
+    text-decoration: none;
+    align-content: center;
+    margin: 0 auto;
+}a.btn:hover {
+    color: red;
+}
 
-    }
-.bouton1:hover {
-    color: #e34; 
-    }
+p.or{
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+a.red{
+    color: #da373a;
+}
