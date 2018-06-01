@@ -8,8 +8,6 @@ div.propos{
 
 .type {
     display: block;
-    width: 25%;
-    line-height: 125%;
     text-align: center;
     background: #000c4c;
     color: #fff;
@@ -17,6 +15,7 @@ div.propos{
     font-family: 'Open Sans', sans-serif;
     align-content: center;
     margin: 0 auto;
+    padding: 2px 20px;
 }
 
 .name {
