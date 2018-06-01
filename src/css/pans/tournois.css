@@ -6,6 +6,8 @@ body {
     background: #222266; 
     color: white; 
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 
     }
 .bouton1:hover {
