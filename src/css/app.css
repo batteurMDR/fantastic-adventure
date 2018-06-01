@@ -114,4 +114,5 @@ nav.nav{
 	list-style: none;
 }nav.nav ul.nav-list li.nav-list-item a.mlink{
 	color: #fff;
+	text-transform: uppercase;
 }
