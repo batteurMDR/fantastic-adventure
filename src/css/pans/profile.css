@@ -7,3 +7,7 @@ div.profile img.profile-avatar{
   	border-radius: 50% !important;
   	margin: 25px 0;
 }
+
+div.profile img.profile-stats{
+	width: 90%;
+}

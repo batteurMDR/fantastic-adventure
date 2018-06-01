@@ -62,7 +62,9 @@ var app = {
 			app.$container.hide();
 			$('head').find('link.'+app.current).remove();
 			$('a.alink').remove();
-			app.$container.load("pans/"+pan+".html");
+			app.$container.load("pans/"+pan+".html",function(){
+				app.pan.listen();
+			});
 			$('head').append($('<link rel="stylesheet" type="text/css" />').attr("href","css/pans/"+pan+".css").attr('class',pan));
 			if(typeof(app.icons[pan])=="string"){
 				$('<a/>',{class:'alink',href:'#'}).append(app.icons[pan]).appendTo(app.$header).on('click',function(e){
@@ -72,6 +74,17 @@ var app = {
 			}
 			app.$container.show();
 			app.current = pan;
+		},
+
+		listen : function(){
+			app.$container.find('a').each(function(){
+				var that = $(this);
+				var pan = that.attr('href');
+				that.on('click',function(e){
+					e.preventDefault();
+					app.pan.load(pan);
+				})
+			});
 		}
 
 	}
