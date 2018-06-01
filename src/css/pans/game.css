@@ -1,0 +1,31 @@
+div.connect{
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
+    margin-top: 10%;
+    display: flex;
+}
+
+a.btn {
+    display: block;
+    width: 40%;
+    height: 4em;
+    padding: 20px;
+    text-align: center;
+    background: #000c4c;
+    color: #fff;
+    text-decoration: none;
+    align-content: center;
+    margin: 0 auto;
+}a.btn:hover {
+    color: red;
+}
+
+p.or{
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+a.red{
+    color: #da373a;
+}
