@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+}
+.bouton1 {
+    padding: 10px 30px; 
+    background: #222266; 
+    color: white; 
+    font-weight: bold;
+
+    }
+.bouton1:hover {
+    color: #e34; 
+    }
