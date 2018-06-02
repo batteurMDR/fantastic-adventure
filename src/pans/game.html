@@ -19,9 +19,24 @@ $("#bleu").click(function(){
     $("#bleu").text(parseInt($("#bleu").text())+1);
 });
 $("#minrouge").click(function(){
-    $("#rouge").text(parseInt($("#rouge").text())-1);
+    
+    if(parseInt($("#rouge").text())-1 >= 0) {
+
+		$("#rouge").text(parseInt($("#rouge").text())-1);
+
+    } else {
+
+    	$("#rouge").text(0);
+    }
 });
 $("#minbleu").click(function(){
-    $("#bleu").text(parseInt($("#bleu").text())-1);
+    if(parseInt($("#bleu").text())-1 >= 0) {
+
+		$("#bleu").text(parseInt($("#bleu").text())-1);
+
+    } else {
+
+    	$("#bleu").text(0);
+    }
 });
 </script>
