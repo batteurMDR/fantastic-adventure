@@ -5,8 +5,13 @@ div.connect{
     margin-top: 10%;
     display: flex;
 }
-
-a.btn {
+div.center {
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1em;
+    display: flex;
+}
+.btn {
     display: block;
     width: 40%;
     height: 4em;
@@ -17,7 +22,8 @@ a.btn {
     text-decoration: none;
     align-content: center;
     margin: 0 auto;
-}a.btn:hover {
+}
+.btn:hover {
     color: red;
 }
 
