@@ -1,6 +1,6 @@
 <div class="center">
 
-    <span class="temps btn"></span>
+    <a id="temps" class="temps btn">0</a>
 
 </div>
 <div class="connect">
@@ -20,6 +20,26 @@
 <a href="amis" class="btn link">Envoyer</a>
 
 <script>
+
+
+
+function displayTime(){
+	console.error(go);
+	if(go = true){
+		tmp++;
+		$('.temps').text(min+':'+sec+':'+dse);
+	}
+}
+$("#temps").click(function(){
+    if(go = false){
+		go = true;
+	} else if (go = true) {
+		go = false;
+	} else {
+		go = true;
+	}
+});
+
 $("#rouge").click(function(){
     $("#rouge").text(parseInt($("#rouge").text())+1);
 });
@@ -52,10 +72,11 @@ var min=0,sec=0,dse=0;
 var tmp=(min*60+sec)*10+dse;
  
 var chrono=setInterval(function (){
-     min=Math.floor(tmp/600);
-     sec=Math.floor((tmp-min*600)/10);
-     dse=tmp-((min*60)+sec)*10;
-     tmp++;
-     $('.temps').text(min+':'+sec+':'+dse);
+	
+	min=Math.floor(tmp/600);
+	sec=Math.floor((tmp-min*600)/10);
+	dse=tmp-((min*60)+sec)*10;
+	displayTime();
 },100);
+
 </script>
