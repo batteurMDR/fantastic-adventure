@@ -1,13 +1,6 @@
-div.profile{
-	text-align: center;
-}
-
-div.profile img.profile-avatar{
-	width: 50%;
-  	border-radius: 50% !important;
-  	margin: 25px 0;
-}
-
-div.profile img.profile-stats{
-	width: 90%;
+div.barre-haut {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	background-color: #000c4c;
 }
