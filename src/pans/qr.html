@@ -1,7 +1,9 @@
+    
     <div class="preview-container">
 		<video id="preview"></video>
 	</div>
     <script type="text/javascript">
+      $("link[href='app.css']").remove();
 	let opts = {
 
 	  continuous: true,
@@ -14,6 +16,7 @@
       let scanner = new Instascan.Scanner(opts);
       scanner.addListener('scan', function (content) {
         app.pan.load("game");
+        scanner.stop();
       });
       Instascan.Camera.getCameras().then(function (cameras) {
         if (cameras.length > 0) {

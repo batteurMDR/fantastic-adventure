@@ -38,6 +38,7 @@ body, html {
   right: -80px;
 }
 header.header{
+  z-index: 2;
   display: block;
   position: absolute;
   top: 0;
@@ -47,9 +48,9 @@ header.header{
   width: 100%;
   line-height: 70px;
   text-align: center;
-  background-color: #fff;
-  border-bottom: 1px solid #070F52;
-  box-shadow: 0 2px 11px 3px rgba(0,0,0,0.09), 0 3px 1px -2px rgba(0,0,0,0.12),0;
+  background-color: transparent;
+  border-bottom: 0px solid transparent;
+  box-shadow: 0 0px 0px 0px rgba(0,0,0,0.09), 0 0px 0px 0px rgba(0,0,0,0.12),0;
 }
 header.header a.menu{
   position: absolute;
@@ -57,7 +58,7 @@ header.header a.menu{
   top: 0;
   bottom: 0;
 }header.header img.header-logo{
-  height: 69px;
+  display: none;
 }header.header a.alink{
   position: absolute;
   right: 15px;
@@ -67,15 +68,18 @@ header.header a.menu{
 
 section.container{
   display: block;
+
   position: absolute;
-  top: 70px;
+  top: -340px;
   left: 0;
   right: 0;
   bottom: 50px;
-  overflow-y: scroll;
-    overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-
+video {
+  transform: scaleX(-3) scaleY(3);
+}
 footer.footer{
   display: block;
   position: absolute;
@@ -85,13 +89,15 @@ footer.footer{
   height: 50px;
   line-height: 50px;
   text-align: center;
-  border-top: 1px solid #070F52;
-  box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.2);
+  background-color: transparent;
+  border-top: 0px;
+
 }footer.footer ul.footer-list{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   list-style: none;
+  background-color: transparent;
   margin: 0;
   padding: 0;
 }footer.footer ul.footer-list li.footer-list-item{
@@ -108,6 +114,7 @@ nav.nav{
   display: block;
   position: absolute;
   width: 80%;
+  background-color: transparent;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -204,6 +211,6 @@ nav.nav{
   justify-content: center;
   display: flex;
   width: 100%;
-  height: 76.8vh;
+  height: 100%;
   overflow: hidden;
 }
