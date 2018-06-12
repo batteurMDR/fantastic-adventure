@@ -5,7 +5,7 @@ div.barre-haut {
 	left: 0;
 	right: 0;
 	height: 70px;
-	width: 80%;
+	width: 100%;
 	background-color: #000c4c;
 }
 div.barre-haut-test {
@@ -26,7 +26,6 @@ div.profil {
 	left: 5%;
 	top: 5%;
 	color: #fff;
-	z-index: 5;
 }
 
 img.img-profil {

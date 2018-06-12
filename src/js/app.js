@@ -107,5 +107,5 @@ var app = {
 }
 
 $(function(){
-	app.init($('body'),"amis");
+	app.init($('body'),"profile");
 });
