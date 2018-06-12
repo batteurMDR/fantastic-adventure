@@ -1,7 +1,24 @@
 div.barre-haut {
-	display: flex;
-	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	height: 70px;
+	width: 80%;
+	background-color: #000c4c;
+}
+div.barre-haut-test {
+	display: block;
+	position: absolute;
+	top: -50px;
+	left: 0;
+	right: 0;
+	height: 45px;
+	width: 100%;
+	background-color: #000c4c;
+}
+.back {
 	background-color: #000c4c;
 }
 
@@ -9,6 +26,7 @@ div.profil {
 	left: 5%;
 	top: 5%;
 	color: #fff;
+	z-index: 5;
 }
 
 img.img-profil {
@@ -20,6 +38,7 @@ img.img-profil {
 	border-radius: 50%;
 	border: 3px solid transparent;
 	border-color: #fff;
+	z-index: 5;
 }
 
 h1.name {
@@ -30,6 +49,7 @@ h1.name {
 	padding: 0;
 	left: 30%;
 	top: 4%;
+	z-index: 5;
 }
 .supporter {
 	font-size: 4.2em;
@@ -39,6 +59,7 @@ h1.name {
 	padding: 0;
 	left: 60%;
 	top: 4.2%;
+	z-index: 5;
 }
 
 .supporte-profil {
@@ -49,6 +70,7 @@ h1.name {
 	padding: 0;
 	left: 79%;
 	top: 4%;
+	z-index: 5;
 }
 
 .supporte-number {

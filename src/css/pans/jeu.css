@@ -5,7 +5,9 @@ div.connect{
     text-align: center;
     height: 100%;
 }
-
+.fa {
+    font-size: 1.5em;
+}
 a.btn {
     display: block;
     width: 80%;

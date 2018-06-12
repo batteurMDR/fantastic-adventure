@@ -1,8 +1,8 @@
 var app = {
 
 	icons : {
-		amis : '<i class="fas fa-plus"></i>',
-		classement : '<i class="fas fa-filter"></i>'
+		amis : '',
+		classement : ''
 	},
 
 	init : function($body,current){
