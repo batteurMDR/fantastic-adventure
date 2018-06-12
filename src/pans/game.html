@@ -41,14 +41,14 @@ $("#temps").click(function(){
     go = (go) ? false : true;
 });
 
-var min=0,sec=0,dse=0;
-var tmp=(min60+sec)10+dse;
+var min = 0, sec = 0, dse = 0;
+var tmp = (min * 60 + sec) * 10 + dse;
  
 var chrono=setInterval(function (){
 
     min=Math.floor(tmp/600);
-    sec=Math.floor((tmp-min600)/10);
-    dse=tmp-((min60)+sec)*10;
+    sec=Math.floor((tmp-min*600)/10);
+    dse=tmp-((min*60)+sec)*10;
     displayTime();
 
 },100);
