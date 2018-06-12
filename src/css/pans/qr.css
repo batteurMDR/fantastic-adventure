@@ -4,6 +4,137 @@ body, html {
   font-family: 'Helvetica Neue', 'Calibri', Arial, sans-serif;
   height: 100%;
 }
+*, *:before, *:after { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    -webkit-overflow-scrolling: touch; 
+}*:focus {
+    outline: none;
+}body,html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}body{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}a{
+  color: inherit;
+  text-decoration: none;
+    color: #000c4c;
+}img{
+  max-width: 100%;
+  height: auto;
+}
+
+.fa {
+  font-size: 1.5em;
+}
+.icon {
+  position: absolute;
+  line-height: 96px;
+  right: -80px;
+}
+header.header{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  width: 100%;
+  line-height: 70px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #070F52;
+  box-shadow: 0 2px 11px 3px rgba(0,0,0,0.09), 0 3px 1px -2px rgba(0,0,0,0.12),0;
+}
+header.header a.menu{
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+}header.header img.header-logo{
+  height: 69px;
+}header.header a.alink{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+section.container{
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+footer.footer{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-top: 1px solid #070F52;
+  box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.2);
+}footer.footer ul.footer-list{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}footer.footer ul.footer-list li.footer-list-item{
+  display: inline-block;
+  vertical-align: top;
+  flex: 1;
+}footer.footer ul.footer-list li.footer-list-item.game{
+  flex: 2;
+}footer.footer ul.footer-list li.footer-list-item a.game{
+  font-size: 2em;
+}
+
+nav.nav{
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: .5s;
+  text-align: center;
+}nav.nav.hidden{
+  left: -80%;
+}nav.nav ul.nav-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 55%;
+}nav.nav ul.nav-list li.nav-list-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}nav.nav ul.nav-list li.nav-list-item a.mlink{
+  color: #fff;
+  text-transform: uppercase;
+}
 #app {
   background: #263238;
   display: flex;
